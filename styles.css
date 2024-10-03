@@ -1,0 +1,110 @@
+@font-face {
+  font-family: outfit;
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: young-serif;
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+/*hsl(30, 54%, 90%)
+hsl(30, 18%, 87%)
+hsl(30, 10%, 34%)
+hsl(24, 5%, 18%)*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: hsl(30, 54%, 90%);
+  font-family: outfit;
+}
+
+.container {
+  margin-left: 100px;
+  width: 590px;
+  background-color: #ffff;
+  padding-left: 50px;
+  padding-right: 60px;
+  margin-top: 80px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.container img{
+  width: 610px;
+  margin-top: 35px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-family: young-serif;
+}
+
+h2 {
+  font-family: young-serif;
+  color: hsl(14, 45%, 36%);
+}
+
+.prep-time {
+  background-color: hsl(330, 100%, 98%);
+  height: 160px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+
+h3{
+  margin-top: 15px;
+  color:  hsl(332, 51%, 32%);
+}
+
+ul {
+  margin-top: -8px;
+  line-height: 30px;
+}
+
+ol {
+  line-height: 30px;
+}
+
+span{
+  position: absolute;
+  left: 720px;
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+@media (max-width: 780px){
+  body{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  .container {
+    width: 780px;
+    padding-left: 0px;
+  }
+  .container img {
+    width: 782px;
+    border-radius: 0px;
+    padding-left: 134px;
+    margin-top: -89px;
+  }
+  .container-items{
+    padding-left: 185px;
+  }
+  span{
+    position: absolute;
+    left: 426px;
+}
+  }
+
+  @media (max-width: 375px){
+    .container-items{
+      padding-left: 250px;
+    }
+  }
